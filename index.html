@@ -2,50 +2,131 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anh Em MC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
       padding: 0;
       background: url('https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/474056EjQ/anh-chill_040218432.jpg') no-repeat center center fixed;
       background-size: cover;
-      height: 100vh;
       font-family: 'Segoe UI', sans-serif;
       color: white;
+    }
+
+    /* Navbar với logo */
+    .navbar {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-      text-shadow: 1px 1px 5px black;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
+
+    .navbar .logo img {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s ease;
     }
-    .logo img {
-      width: 70px;
-      height: 70px;
+
+    .navbar .logo img:hover {
+      transform: scale(1.1);
     }
+
+    .navbar .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
     h1 {
+      text-align: center;
+      margin-top: 80px;
       font-size: 3rem;
       letter-spacing: 3px;
+      text-shadow: 1px 1px 5px black;
     }
-    p {
-      font-size: 1.2rem;
-      opacity: 0.8;
-      letter-spacing: 4px;
+
+    /* Card ngang */
+    .card-horizontal {
+      display: flex;
+      align-items: center;
+      max-width: 700px;
+      margin: 40px auto;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card-horizontal:hover img {
+      transform: scale(1.05);
+    }
+
+    .card-horizontal img {
+      width: 220px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .card-horizontal .caption {
+      padding: 20px;
+      font-size: 14px;
+      line-height: 1.6;
+      text-shadow: 1px 1px 3px black;
+      color: white;
+      flex: 1;
     }
   </style>
 </head>
 <body>
-  <div class="logo">
-    <a href="https://anhemmc.asia">
-      <img src="https://img.upanh.tv/2025/04/25/rounded-in-photoretrica.png" alt="Anh Em MC">
-    </a>
+
+  <!-- Navbar với logo và tab -->
+  <div class="navbar">
+    <div class="logo">
+      <a href="#">
+        <img src="https://img.upanh.tv/2025/04/25/rounded-in-photoretrica.png" alt="Logo">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="#">Trang chủ</a>
+      <a href="#">Hướng dẫn</a>
+      <a href="#">Máy chủ</a>
+      <a href="#">Liên hệ</a>
+    </div>
   </div>
-  <h1>ANH EM MC</h1>
-  <p>Coming Soon</p>
+
+  <!-- Tiêu đề -->
+  <h1>ANHEMMC</h1>
+
+  <!-- Card nằm ngang -->
+  <div class="card-horizontal">
+    <img src="https://img.upanh.tv/2025/04/25/rounded-in-photoretrica.png" alt="Ảnh AE MC">
+    <div class="caption">
+      🌸『𝙰𝚗𝚑 𝙴𝚖 𝙼𝙲』🔰『𝚂𝚞𝚛𝚟𝚒𝚟𝚊𝚕』🌸<br><br>
+      『𝙿c: 𝙰𝚗𝚑𝙴𝚖𝙼𝙲.𝚊𝚜𝚒𝚊』<br>
+      『𝙿𝚎: 𝙰𝚗𝚑𝙴𝚖𝙼𝙲.𝚊𝚜𝚒𝚊 (𝟻0𝟷0)』
+    </div>
+  </div>
+
 </body>
 </html>
