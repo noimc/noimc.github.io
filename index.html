@@ -11,21 +11,26 @@
       background: linear-gradient(to right, #111, #222);
       color: white;
       text-align: center;
+      padding-bottom: 70px; /* chừa chỗ cho credit ở dưới */
     }
+
     header {
       padding: 40px 20px;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     }
+
     h1 {
       font-size: 3em;
       color: #00ffcc;
       margin-bottom: 0.3em;
     }
+
     p.motd {
       font-size: 1.2em;
       color: #ccc;
       font-style: italic;
     }
+
     .ip-box {
       background: #333;
       display: inline-block;
@@ -36,9 +41,11 @@
       border: 2px solid #00ffcc;
       user-select: all;
     }
+
     .section {
       padding: 40px 20px;
     }
+
     .btn {
       display: inline-block;
       margin-top: 20px;
@@ -50,12 +57,28 @@
       font-weight: bold;
       text-decoration: none;
     }
+
     footer {
-      margin-top: 40px;
-      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
       background: #111;
+      padding: 10px 5px;
+      text-align: center;
       font-size: 0.9em;
       color: #777;
+      border-top: 1px solid #333;
+      z-index: 100;
+    }
+
+    footer a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -63,7 +86,7 @@
   <header>
     <h1>AnhemMC.asia</h1>
     <p class="motd">“ᴛʜắɴɢ ʟàᴍ ᴠᴜᴀ, ʙạɪ ᴍéᴄ ᴍẹ”</p>
-    <div class="ip-box">IP: anhemmc.asia</div>
+    <div class="ip-box">IP: anhemmc.asia:25014</div>
   </header>
 
   <div class="section">
@@ -83,7 +106,8 @@
   </div>
 
   <footer>
-    © 2025 AnhemMC | Địa chỉ IP: anhemmc.asia
+    © 2025 AnhemMC | Địa chỉ IP: anhemmc.asia<br>
+    Thiết kế bởi <strong><a href="https://chat.openai.com/" target="_blank">ChatGPT</a></strong>
   </footer>
 </body>
 </html>
